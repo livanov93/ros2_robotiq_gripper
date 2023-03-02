@@ -29,12 +29,27 @@
                     <state_interface name="position">
                         <param name="initial_value">0.2</param>
                     </state_interface>
+                    <param name="p_pos">25.0</param>
+                    <param name="i_pos">0.0</param>
+                    <param name="d_pos">0.25</param>
+                    <param name="iMax_pos">1.0</param>
+                    <param name="iMin_pos">-1.0</param>
+                    <param name="cmdMax_pos">2.0</param>
+                    <param name="cmdMin_pos">-2.0</param>
+                    <param name="cmdOffset_pos">0.0</param>
+                    <param name="p_vel">0.25</param>
+                    <param name="i_vel">0.025</param>
+                    <param name="d_vel">0.0</param>
+                    <param name="iMax_vel">25.0</param>
+                    <param name="iMin_vel">-25.0</param>
+                    <param name="cmdMax_vel">1000.0</param>
+                    <param name="cmdMin_vel">-1000.0</param>
+                    <param name="cmdOffset_vel">0.0</param>
                 </xacro:if>
                 <xacro:unless value="${sim_ignition}">
                     <param name="initial_position">0.7929</param>
                     <state_interface name="position"/>
                 </xacro:unless>
-
                 <command_interface name="position" />
                 <state_interface name="velocity"/>
             </joint>
@@ -46,6 +61,24 @@
                     <state_interface name="position"/>
                     <state_interface name="velocity"/>
                 </xacro:unless>
+                <xacro:if value="${sim_ignition}">
+                    <param name="p_pos">10.0</param>
+                    <param name="i_pos">0.0</param>
+                    <param name="d_pos">0.0</param>
+                    <param name="iMax_pos">1.0</param>
+                    <param name="iMin_pos">-1.0</param>
+                    <param name="cmdMax_pos">2.0</param>
+                    <param name="cmdMin_pos">-2.0</param>
+                    <param name="cmdOffset_pos">0.0</param>
+                    <param name="p_vel">0.1</param>
+                    <param name="i_vel">0.001</param>
+                    <param name="d_vel">0.0</param>
+                    <param name="iMax_vel">25.0</param>
+                    <param name="iMin_vel">-25.0</param>
+                    <param name="cmdMax_vel">50.0</param>
+                    <param name="cmdMin_vel">-50.0</param>
+                    <param name="cmdOffset_vel">0.0</param>
+                </xacro:if>
             </joint>
             <joint name="robotiq_85_left_inner_knuckle_joint">
                 <param name="mimic">robotiq_85_left_knuckle_joint</param>
@@ -55,6 +88,24 @@
                     <state_interface name="position"/>
                     <state_interface name="velocity"/>
                 </xacro:unless>
+                <xacro:if value="${sim_ignition}">
+                    <param name="p_pos">10.0</param>
+                    <param name="i_pos">0.0</param>
+                    <param name="d_pos">0.0</param>
+                    <param name="iMax_pos">1.0</param>
+                    <param name="iMin_pos">-1.0</param>
+                    <param name="cmdMax_pos">2.0</param>
+                    <param name="cmdMin_pos">-2.0</param>
+                    <param name="cmdOffset_pos">0.0</param>
+                    <param name="p_vel">0.1</param>
+                    <param name="i_vel">0.001</param>
+                    <param name="d_vel">0.0</param>
+                    <param name="iMax_vel">25.0</param>
+                    <param name="iMin_vel">-25.0</param>
+                    <param name="cmdMax_vel">50.0</param>
+                    <param name="cmdMin_vel">-50.0</param>
+                    <param name="cmdOffset_vel">0.0</param>
+                </xacro:if>
             </joint>
             <joint name="robotiq_85_right_inner_knuckle_joint">
                 <param name="mimic">robotiq_85_left_knuckle_joint</param>
@@ -64,6 +115,24 @@
                     <state_interface name="position"/>
                     <state_interface name="velocity"/>
                 </xacro:unless>
+                <xacro:if value="${sim_ignition}">
+                    <param name="p_pos">10.0</param>
+                    <param name="i_pos">0.0</param>
+                    <param name="d_pos">0.0</param>
+                    <param name="iMax_pos">1.0</param>
+                    <param name="iMin_pos">-1.0</param>
+                    <param name="cmdMax_pos">2.0</param>
+                    <param name="cmdMin_pos">-2.0</param>
+                    <param name="cmdOffset_pos">0.0</param>
+                    <param name="p_vel">0.1</param>
+                    <param name="i_vel">0.001</param>
+                    <param name="d_vel">0.0</param>
+                    <param name="iMax_vel">25.0</param>
+                    <param name="iMin_vel">-25.0</param>
+                    <param name="cmdMax_vel">50.0</param>
+                    <param name="cmdMin_vel">-50.0</param>
+                    <param name="cmdOffset_vel">0.0</param>
+                </xacro:if>
             </joint>
             <joint name="robotiq_85_left_finger_tip_joint">
                 <param name="mimic">robotiq_85_left_knuckle_joint</param>
@@ -73,6 +142,24 @@
                     <state_interface name="position"/>
                     <state_interface name="velocity"/>
                 </xacro:unless>
+                <xacro:if value="${sim_ignition}">
+                    <param name="p_pos">10.0</param>
+                    <param name="i_pos">0.0</param>
+                    <param name="d_pos">0.0</param>
+                    <param name="iMax_pos">1.0</param>
+                    <param name="iMin_pos">-1.0</param>
+                    <param name="cmdMax_pos">2.0</param>
+                    <param name="cmdMin_pos">-2.0</param>
+                    <param name="cmdOffset_pos">0.0</param>
+                    <param name="p_vel">0.1</param>
+                    <param name="i_vel">0.001</param>
+                    <param name="d_vel">0.0</param>
+                    <param name="iMax_vel">25.0</param>
+                    <param name="iMin_vel">-25.0</param>
+                    <param name="cmdMax_vel">50.0</param>
+                    <param name="cmdMin_vel">-50.0</param>
+                    <param name="cmdOffset_vel">0.0</param>
+                </xacro:if>
             </joint>
             <joint name="robotiq_85_right_finger_tip_joint">
                 <param name="mimic">robotiq_85_left_knuckle_joint</param>
@@ -82,6 +169,24 @@
                     <state_interface name="position"/>
                     <state_interface name="velocity"/>
                 </xacro:unless>
+                <xacro:if value="${sim_ignition}">
+                    <param name="p_pos">10.0</param>
+                    <param name="i_pos">0.0</param>
+                    <param name="d_pos">0.0</param>
+                    <param name="iMax_pos">1.0</param>
+                    <param name="iMin_pos">-1.0</param>
+                    <param name="cmdMax_pos">2.0</param>
+                    <param name="cmdMin_pos">-2.0</param>
+                    <param name="cmdOffset_pos">0.0</param>
+                    <param name="p_vel">0.1</param>
+                    <param name="i_vel">0.001</param>
+                    <param name="d_vel">0.0</param>
+                    <param name="iMax_vel">25.0</param>
+                    <param name="iMin_vel">-25.0</param>
+                    <param name="cmdMax_vel">50.0</param>
+                    <param name="cmdMin_vel">-50.0</param>
+                    <param name="cmdOffset_vel">0.0</param>
+                </xacro:if>
             </joint>
 
             <!-- Only add this with fake hardware mode -->
